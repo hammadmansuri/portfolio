@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout>
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    This is sidenav
+  </md-sidenav>
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+    <h3 class="md-list-item">
+      {{title}}
+    </h3>
+
+  </md-toolbar>
+  <md-sidenav-layout>
